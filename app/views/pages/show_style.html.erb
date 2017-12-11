@@ -1,0 +1,69 @@
+<!-- gros sakura or  -->
+<div class="container_sakura_style">
+  <%= image_tag 'SAKURA.png' %>
+</div>
+
+<!-- élement .page contenant les 3 parties : nav_left / main / nav_right -->
+
+<div class="page_style">
+
+  <div class="left_style">
+    <h3>
+      <%= link_to root_path do %>
+        <div class="glitch_logo" data-text="SAKURA">SAKURA
+        </div>
+      <% end  %>
+    </h3>
+    <br>
+    <div class="styles_links">
+      <% @styles.each do |style| %>
+        <h3>
+          <%= link_to ("#{style.name}"), show_style_path(style)%>
+        </h3>
+      <% end %>
+      <br>
+      <h3><%= link_to 'ver todos', home_FW_2017_path %></h3>
+    </div>
+  </div>
+
+
+  <section class="style_container">
+    <div class="style_title_container">
+      <div class="style_title">
+        <h1><%=@style.name%></h1>
+        <h2><%= @style.description %></h2>
+      </div>
+    </div>
+    <div>
+      <% @photos.each do |photo| %>
+        <div class="photo"></div>
+          <%= link_to show_photo_path(photo) do %>
+            <div class="photo_image" style="position: relative;z-index: <%= [100, 102].sample %>" >
+              <%= image_tag photo.image %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+  </section>
+
+  <div class="right_style">
+    <div class="up">
+      <h3>
+        <div class="comprar">
+          <%= link_to 'comprar #', "https://www.etafashion.com/" %>
+        </div>
+      </h3>
+      <br>
+      <div class="socials_links">
+        <h3><%= link_to 'contactanos #', "#" %></h3>
+        <h3><%= link_to 'instagram #',  "#" %></h3>
+        <h3><%= link_to 'facebook #', "#" %></h3>
+        <h3><%= link_to 'creditos #', "#" %></h3>
+      </div>
+    </div>
+    <div class="down">
+      <div class="description">
+      </div>
+    </div>
+  </div>
+</div>
