@@ -61,3 +61,21 @@
     animation:noise-anim-2 1s infinite linear alternate-reverse;
   }
 }
+
+
+@media only screen and (max-width: 480px) {
+  .container_landing {
+    height: 80vh;
+    a {
+      font-size: 50px;
+    }
+    a:hover {
+      border-bottom: 8px solid black;
+    }
+  }
+}
+
+
+
+
+

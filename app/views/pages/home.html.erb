@@ -14,15 +14,16 @@
       <% end %>
     </h3>
     <br>
-    <div class="styles_links">
+    <ul class="styles_links">
       <% @styles.each do |style| %>
-        <h3>
+        <li>
           <%= link_to ("#{style.name}"), show_style_path(style) %>
-        </h3>
+        </li>
       <% end %>
-      <br>
-      <h3>
-      <%= link_to 'ver todos', home_FW_2017_path, style:"border-bottom: 2.5px solid black" %></h3>
+      <li>
+        <%= link_to 'ver todos', home_FW_2017_path, style:"border-bottom: 2.5px solid black" %>
+      </li>
+    </ul>
     </div>
   </div>
 

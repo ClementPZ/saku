@@ -27,7 +27,6 @@ h1 {
 h2 {
   font-size:        15px;
 }
-
 // Liens
 h3 {
   font-size:        15px;
@@ -47,4 +46,26 @@ a:hover {
   cursor: url(Pointer.cur), auto;
 }
 
-
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    font-size:        15px;
+    margin-top:       5px;
+    margin-bottom:    0px;
+  }
+  li:last-child {
+    margin-top: 30px;
+  }
+  // Liens
+  a {
+    font-size:        15px;
+    margin-top:       5px;
+    margin-bottom:    0px;
+    a:hover {
+      cursor: url(Pointer.cur), auto;
+    }
+  }
+}
