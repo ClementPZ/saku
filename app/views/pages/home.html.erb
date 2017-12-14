@@ -1,13 +1,15 @@
 <!-- gros sakura or  -->
-<div class="container_sakura_home">
-  <%= image_tag 'SAKURA.png' %>
+<div class="container_sakura">
+  <div class="saku_home">
+    <%= image_tag 'SAKURA.png' %>
+  </div>
 </div>
 
 <!-- élement .page contenant les 3 parties : nav_left main nav_right -->
 
-<div class="page_styles">
+<div class="page_style">
 
-  <div class="left">
+  <div class="nav_left">
     <%= link_to root_path do %>
       <h3 class="glitch_logo" data-text="SAKURA">SAKURA
       </h3>
@@ -24,9 +26,7 @@
     </ul>
   </div>
 
-
-  <section class="styles_container">
-
+  <section class="style_container">
     <div class="title_container">
       <div class="title">
         <h1>COLECCIÒN FW 2017</h1>
@@ -36,19 +36,19 @@
     <% @styles.each do |style| %>
       <div class="style" >
         <%= link_to show_style_path(style) do %>
-          <div class="style_cover"><%= image_tag style.cover %>
-          </div>
-          <h2 class="style_name"><%= style.name %></h2>
+          <%= image_tag style.cover %>
+          <h2 class="description"><%= style.name %></h2>
         <% end %>
       </div>
     <% end %>
   </section>
 
-  <ul class="right">
+  <ul class="nav_right">
     <li><%= link_to 'comprar #', "https://www.etafashion.com/" %></li>
     <li><%= link_to 'contactanos #', "mailto:clementpicardzivy@gmail.com" %></li>
     <li><%= link_to 'instagram #',  "#" %></li>
     <li><%= link_to 'facebook #', "#" %></li>
     <li><%= link_to 'creditos #', "mailto:clementpicardzivy@gmail.com" %></li>
   </ul>
+
 </div>
