@@ -7,12 +7,10 @@
 
 <div class="page_styles">
   <div class="left">
-    <h3>
       <%= link_to root_path do %>
-        <div class="glitch_logo" data-text="SAKURA">SAKURA
-        </div>
+        <h3 class="glitch_logo" data-text="SAKURA">SAKURA
+        </h3>
       <% end %>
-    </h3>
     <ul class="styles_links">
       <% @styles.each do |style| %>
         <li>
@@ -23,8 +21,8 @@
         <%= link_to 'ver todos', home_FW_2017_path, style:"border-bottom: 2.5px solid black" %>
       </li>
     </ul>
-    </div>
   </div>
+</div>
 
 
   <section class="styles_container">
@@ -47,16 +45,10 @@
   </section>
 
   <ul class="right">
-    <li>
-      <div class="comprar">
-        <%= link_to 'comprar #', "https://www.etafashion.com/" %>
-      </div>
-    </li>
-    <div class="socials_links">
-      <li><%= link_to 'contactanos #', "mailto:clementpicardzivy@gmail.com" %></li>
-      <li><%= link_to 'instagram #',  "#" %></li>
-      <li><%= link_to 'facebook #', "#" %></li>
-      <li><%= link_to 'creditos #', "mailto:clementpicardzivy@gmail.com" %></li>
-    </div>
+    <li><%= link_to 'comprar #', "https://www.etafashion.com/" %></li>
+    <li><%= link_to 'contactanos #', "mailto:clementpicardzivy@gmail.com" %></li>
+    <li><%= link_to 'instagram #',  "#" %></li>
+    <li><%= link_to 'facebook #', "#" %></li>
+    <li><%= link_to 'creditos #', "mailto:clementpicardzivy@gmail.com" %></li>
   </ul>
 </div>
