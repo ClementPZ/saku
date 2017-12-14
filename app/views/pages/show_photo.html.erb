@@ -4,16 +4,12 @@
 </div>
  -->
 
-
-<div class="sakura_show">
-  <h3>
-    <div class="glitch_logo" data-text="SAKURA">SAKURA
-    </div>
-  </h3>
-</div>
-
-<%= link_to show_style_path(@style) do %>
-  <div class="image_photo_show">
-    <%= image_tag @photo.image %>
+<div class="full">
+  <div class="sakura">
+    <h3 class="glitch_logo" data-text="SAKURA">SAKURA
+    </h3>
   </div>
-<% end %>
+  <%= link_to show_style_path(@style) do %>
+      <%= image_tag @photo.image %>
+  <% end %>
+</div>
