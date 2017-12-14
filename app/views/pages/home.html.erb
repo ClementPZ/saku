@@ -14,12 +14,14 @@
       <h3 class="glitch_logo" data-text="SAKURA">SAKURA
       </h3>
     <% end %>
+    <br>
     <ul class="styles_links">
       <% @styles.each do |style| %>
         <li>
           <%= link_to ("#{style.name}"), show_style_path(style) %>
         </li>
       <% end %>
+      <br>
       <li>
         <%= link_to 'ver todos', home_FW_2017_path %>
       </li>
