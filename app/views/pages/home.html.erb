@@ -6,11 +6,12 @@
 <!-- élement .page contenant les 3 parties : nav_left main nav_right -->
 
 <div class="page_styles">
+
   <div class="left">
-      <%= link_to root_path do %>
-        <h3 class="glitch_logo" data-text="SAKURA">SAKURA
-        </h3>
-      <% end %>
+    <%= link_to root_path do %>
+      <h3 class="glitch_logo" data-text="SAKURA">SAKURA
+      </h3>
+    <% end %>
     <ul class="styles_links">
       <% @styles.each do |style| %>
         <li>
@@ -18,7 +19,7 @@
         </li>
       <% end %>
       <li>
-        <%= link_to 'ver todos', home_FW_2017_path, style:"border-bottom: 2.5px solid black" %>
+        <%= link_to 'ver todos', home_FW_2017_path %>
       </li>
     </ul>
   </div>
