@@ -202,3 +202,22 @@ ul {
     }
   }
 }
+
+
+@media only screen and (max-width: 500px) {
+  .styles_links {
+    display: none;
+  }
+  .nav_right {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
