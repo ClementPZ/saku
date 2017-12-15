@@ -14,14 +14,12 @@
       <h3 class="glitch_logo" data-text="SAKURA">SAKURA
       </h3>
     <% end %>
-    <br>
     <ul class="styles_links">
       <% @styles.each do |style| %>
         <li>
           <%= link_to ("#{style.name}"), show_style_path(style)%>
         </li>
       <% end %>
-      <br>
       <li>
         <%= link_to 'ver todos', home_FW_2017_path %>
       </li>
@@ -47,7 +45,8 @@
     <% end %>
   </section>
 
-  <div class="container_nav_right">
+<nav role="navigation" >
+  <div class="container_nav_right" >
     <ul class="nav_right">
       <li><%= link_to 'comprar #', "https://www.etafashion.com/" %></li>
       <li><%= link_to 'contactanos #', "mailto:clementpicardzivy@gmail.com" %></li>
@@ -56,5 +55,5 @@
       <li><%= link_to 'creditos #', "mailto:clementpicardzivy@gmail.com" %></li>
     </ul>
   </div>
-</div>
+</nav>
 
