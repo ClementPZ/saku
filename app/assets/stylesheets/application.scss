@@ -129,22 +129,18 @@ ul {
       }
     }
 
-    .style_links {
+    .styles_links {
       list-style-type: none;
       padding: 0;
       margin: 0;
-
-      ul a {
-          font-size:        15px;
-          margin-top:       5px;
-          margin-bottom:    0px;
-      }
-      ul a:hover {
+      li a:hover {
         border-bottom: 2.5px solid black;
-
-      ul:last-child {
-        margin-top: 25px;
-      }
+    }
+    :first-child {
+      margin-top: 25px;
+    }
+    :last-child {
+      margin-top: 25px;
     }
   }
   .style_container {
@@ -201,8 +197,8 @@ ul {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    // :first-child {
-    //   margin-bottom: 25px;
-    // }
+    :first-child {
+      margin-bottom: 25px;
+    }
   }
 }
