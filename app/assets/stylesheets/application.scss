@@ -44,18 +44,16 @@ ul {
 
 
 .container_sakura {
-  position:        fixed;
-  z-index:         101;
-  display:         flex;
-  align-items:     center;
-  justify-content: center;
-  width:           100%;
-  height:          auto;
-  bottom:          -10px;
-  margin-left:     9px;
-  margin-top:      10px;
-  img {
-    width:         100%;
+    position: fixed;
+    z-index: 101;
+    align-items: center;
+    justify-content: center;
+    bottom: -8px;
+  .saku {
+    width: 100vw;
+    img {
+      width:  100%;
+    }
   }
 }
 
@@ -152,7 +150,7 @@ ul {
     justify-content:  center;
 
     .title_container {
-      width:            100%;
+      width:            101%;
       background-color: white;
       z-index:          103;
       position:         sticky;
@@ -189,11 +187,12 @@ ul {
 
   .container_nav_right {
     width: 15vw;
+    position: sticky; top: 6px;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 0;
     .nav_right {
-      position: sticky; top: 6px;
-      margin-right: 6px;
-      margin-top: 6px;
-      padding: 0;
+
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -206,7 +205,7 @@ ul {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   // Titre page
   h1 {
     font-size:        12px;
