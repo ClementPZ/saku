@@ -3,7 +3,7 @@
 @import "pages/index";
 
 body {
-  cursor: url(/assets/images/cursorBIGCUBE.cur), auto;
+  cursor: url(/assets/cursorBIGCUBE.cur), auto;
   margin: 0px;
   color:            black;
   font-family:      Futura;
@@ -18,9 +18,8 @@ a {
   // cursor:pointer!important;
 
 }
-
 a:hover {
-  cursor: url(Pointer.cur), auto;
+  cursor: url(/assets/Pointer.cur), auto;
 }
 
 // Titre page
@@ -208,7 +207,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 940px) {
   // Titre page
   h1 {
     font-size:        18px;
