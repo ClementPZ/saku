@@ -189,12 +189,11 @@ ul {
 
   .container_nav_right {
     width: 15vw;
-    position: sticky; top: 6px;
     margin-right: 6px;
     margin-top: 6px;
     padding: 0;
     .nav_right {
-
+      position: sticky; top: 6px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -206,14 +205,14 @@ ul {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 780px) {
   // Titre page
   h1 {
-    font-size:        12px;
+    font-size:        18px;
   }
   // Description / sous-titre
   h2 {
-    font-size:        7px;
+    font-size:        12px;
   }
   // Liens
   a {
@@ -226,6 +225,7 @@ ul {
   }
 
   .page_style {
+
     .nav_left {
       width: 9vw;
       .glitch_logo {
@@ -243,9 +243,6 @@ ul {
       }
       .style {
         margin-top:     15px;
-      }
-      .description {
-        margin: 5px;
       }
     }
     .container_nav_right {
