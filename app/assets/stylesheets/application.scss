@@ -3,7 +3,7 @@
 @import "pages/index";
 
 body {
-  cursor: url(cursorBIGCUBE.cur), auto;
+  cursor: url(/assets/images/cursorBIGCUBE.cur), auto;
   margin: 0px;
   color:            black;
   font-family:      Futura;
@@ -193,7 +193,7 @@ ul {
     margin-top: 6px;
     padding: 0;
     .nav_right {
-      position: sticky; top: 6px;
+      position: fixed;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -227,9 +227,9 @@ ul {
   .page_style {
 
     .nav_left {
-      width: 9vw;
+      position: fixed;
       .glitch_logo {
-        position: sticky; top: 6px;
+        // position: sticky; top: 6px;
       }
       .styles_links {
         display: none;
@@ -237,7 +237,9 @@ ul {
     }
 
     .style_container {
-      width:            82vw;
+      width:            100%;
+      padding:          30px;
+      box-sizing: border-box;
       .title_container {
         margin-top:      25px;
       }
@@ -246,9 +248,8 @@ ul {
       }
     }
     .container_nav_right {
-      width: 9vw;
+      display: none;
       .nav_right {
-        display: none;
       }
     }
   }
