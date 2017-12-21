@@ -3,7 +3,7 @@
 @import "pages/index";
 
 body {
-  cursor: url(public/assets/cursorBIGCUBE.cur), crosshair;
+  cursor: url(assets/cursorBIGCUBE.png), crosshair;
   margin: 0px;
   color:            black;
   font-family:      Futura;
@@ -19,7 +19,7 @@ a {
 
 }
 a:hover {
-  cursor: url(public/assets/Pointer.cur), nw-resize;
+  cursor: url(assets/Pointer.png), nw-resize;
 }
 
 // Titre page
