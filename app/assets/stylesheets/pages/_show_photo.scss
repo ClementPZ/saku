@@ -1,6 +1,6 @@
 .full {
   a:hover {
-  cursor: url(/assets/cursorCROSS.cur), auto;
+  cursor: url(/assets/cursorCROSS.cur)!important, w-resize;
   }
   .sakura {
     position: fixed;
