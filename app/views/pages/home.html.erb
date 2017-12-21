@@ -8,15 +8,13 @@
 <!-- élement .page contenant les 3 parties : nav_left main nav_right -->
 
 <div class="page_style">
-
   <ul class="nav_left">
-  <li>
-    <%= link_to root_path do %>
-      <div class="glitch_logo" data-text="SAKURA">
-        SAKURA
-      </div>
-    <% end %>
-  </li>
+    <li>
+      <%= link_to root_path do %>
+        <div class="glitch_logo" data-text="SAKURA">
+          SAKURA</div>
+      <% end %>
+    </li>
     <div class="styles_links">
       <% @styles.each do |style| %>
         <li>
