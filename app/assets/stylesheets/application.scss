@@ -36,6 +36,7 @@ h2 {
 // logo
 h3 {
   font-size:        15px;
+  margin: 0;
 }
 
 ul {
@@ -191,9 +192,11 @@ ul {
     width: 15vw;
     margin-right: 6px;
     margin-top: 6px;
+    padding-left: 2px;
     padding: 0;
     .nav_right {
       position: fixed;
+      right: 4px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -215,8 +218,8 @@ ul {
     font-size:        12px;
   }
   // Liens
-  a {
-    font-size:        10px;
+  h3 {
+    display: none
   }
 
   .container_sakura {
@@ -227,8 +230,10 @@ ul {
   .page_style {
 
     .nav_left {
+      z-index: 666;
       position: fixed;
       .glitch_logo {
+        font-size:        10px;
         // position: sticky; top: 6px;
       }
       .styles_links {
