@@ -15,7 +15,8 @@ a {
   color:            black;
   text-decoration:  none;
   font-size:        15px;
-  cursor:pointer!important;
+  // cursor:pointer!important;
+
 }
 
 a:hover {
@@ -218,9 +219,6 @@ ul {
   a {
     font-size:        10px;
   }
-  .glitch_logo {
-    font-size: 7px;
-  }
 
   .container_sakura {
     margin: 0;
@@ -228,12 +226,10 @@ ul {
   }
 
   .page_style {
-    width: 100vh;
     .nav_left {
       width: 9vw;
       .glitch_logo {
         position: sticky; top: 6px;
-        font-size: 7px;
       }
       .styles_links {
         display: none;
